@@ -49,6 +49,28 @@
 				"configuration": "./language-configuration.json"
 			},
 			{
+				"id": "typescript",
+				"aliases": [
+					"TypeScript (Babel)"
+				],
+				"extensions": [
+					".ts",
+					".tsx"
+				],
+				"configuration": "./language-configuration.json"
+			},
+			{
+				"id": "typescriptreact",
+				"aliases": [
+					"TypeScript React (Babel)"
+				],
+				"extensions": [
+					".ts",
+					".tsx",
+				],
+				"configuration": "./language-configuration.json"
+			},
+			{
 				"id": "jsx-tags",
 				"aliases": [],
 				"configuration": "./tags-language-configuration.json"
@@ -68,6 +90,28 @@
 			},
 			{
 				"language": "javascriptreact",
+				"scopeName": "source.js",
+				"path": "./syntaxes/sublime-babel.json",
+				"embeddedLanguages": {
+					"meta.jsx.js": "jsx-tags",
+					"meta.tag.jsx": "jsx-tags",
+					"meta.tag.js": "jsx-tags",
+					"meta.tag.without-attributes.js": "jsx-tags"
+				}
+			},
+			{
+				"language": "typescript",
+				"scopeName": "source.js",
+				"path": "./syntaxes/sublime-babel.json",
+				"embeddedLanguages": {
+					"meta.jsx.js": "jsx-tags",
+					"meta.tag.jsx": "jsx-tags",
+					"meta.tag.js": "jsx-tags",
+					"meta.tag.without-attributes.js": "jsx-tags"
+				}
+			},
+			{
+				"language": "typescriptreact",
 				"scopeName": "source.js",
 				"path": "./syntaxes/sublime-babel.json",
 				"embeddedLanguages": {
